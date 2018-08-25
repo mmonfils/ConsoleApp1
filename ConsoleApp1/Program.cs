@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace ConsoleApp1
 {
@@ -12,6 +13,13 @@ namespace ConsoleApp1
 		{
 			Console.WriteLine("Hello");
             Console.WriteLine("Hello from Jay!");
+
+            //Testing
+            Stopwatch myStopWatch = Stopwatch.StartNew();
+            while (myStopWatch.Elapsed.Seconds < 5)
+            {
+                //This will break after 5 second
+            }
 		}
 	}
 }
